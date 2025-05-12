@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: meteor-config
+data:
+  ROOT_URL: "http://localhost:3000"
+  PORT: "3000" 

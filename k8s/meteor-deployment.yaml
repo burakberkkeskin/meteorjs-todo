@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meteor-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meteor-app
+  template:
+    metadata:
+      labels:
+        app: meteor-app
+    spec:
+      containers:
+      - name: meteor-app
+        image: meteor-app:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: meteor-config
+        - secretRef:
+            name: meteor-mongodb-secret
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m" 
