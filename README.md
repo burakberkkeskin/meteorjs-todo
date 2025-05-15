@@ -58,6 +58,15 @@ meteor
 
 The application will be available at `http://localhost:3000`
 
+## External Mongo
+
+If you want to start the app with an external MongoDB, use this:
+
+```bash
+export MONGO_URL="mongodb://myuser:mypassword@mongo.example.com:27017/mydatabase?authSource=admin"
+meteor
+```
+
 ## Technical Details
 
 ### Backend (Meteor.js)
