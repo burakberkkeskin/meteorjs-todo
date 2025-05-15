@@ -1,6 +1,6 @@
 {
     "name": "Node.js Dev Environment",
-    "image": "mcr.microsoft.com/devcontainers/node:22",
+    "image": "mcr.microsoft.com/devcontainers/node:20",
     "features": {
       "ghcr.io/devcontainers/features/git:1": {}
     },
