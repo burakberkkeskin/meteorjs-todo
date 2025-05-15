@@ -1,6 +1,6 @@
 {
     "name": "Node.js Dev Environment",
-    "image": "mcr.microsoft.com/devcontainers/node:20-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
     "features": {
       "ghcr.io/devcontainers/features/git:1": {}
     },
